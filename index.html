@@ -145,7 +145,9 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div class="col">
                     <div class="card h-100 border-0 shadow-lg py-3">
-                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <div>
+                            <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Supply 350</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
@@ -153,13 +155,15 @@
                         </div>
                         <div class="ms-3">
                             <h5>$120</h5>
-                            <button class="panda-btn-buy-now">Buy Now</button>
+                            <button class="panda-btn-buy-now clickToRemove" onclick="clickToLog()">Buy Now</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 border-0 shadow-lg py-3">
-                        <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                        <div>
+                            <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Nike 360</h5>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
@@ -167,13 +171,15 @@
                         </div>
                         <div class="ms-3">
                             <h5>$320</h5>
-                            <button class="panda-btn-buy-now">Buy Now</button>
+                            <button class="panda-btn-buy-now clickToRemove">Buy Now</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 border-0 shadow-lg py-3">
-                        <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                        <div>
+                            <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Red Airmax</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -181,7 +187,7 @@
                         </div>
                         <div class="ms-3">
                             <h5>$350</h5>
-                            <button class="panda-btn-buy-now">Buy Now</button>
+                            <button class="panda-btn-buy-now clickToRemove">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -194,7 +200,9 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div class="col">
                     <div class="card h-100 border-0 shadow-lg py-3">
-                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <div class="img-parent">
+                            <img src="images/bags/bag-1.png" class="card-img-top change-img" alt="...">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Red Laltu Bag</h5>
                             <h5>$120</h5>
@@ -203,13 +211,15 @@
                         </div>
                         <div class="ms-3">
 
-                            <button class="panda-btn-buy-now">Buy Now</button>
+                            <button class="panda-btn-buy-now clickToRemove">Buy Now</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 border-0 shadow-lg py-3">
-                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="img-parent">
+                            <img src="images/bags/bag-2.png" class="card-img-top change-img" alt="...">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Blue Niltu Bag</h5>
                             <h5>$320</h5>
@@ -217,13 +227,15 @@
                                 content.</p>
                         </div>
                         <div class="ms-3">
-                            <button class="panda-btn-buy-now">Buy Now</button>
+                            <button class="panda-btn-buy-now clickToRemove">Buy Now</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 border-0 shadow-lg py-3">
-                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                        <div class="img-parent">
+                            <img src="images/bags/bag-3.png" class="card-img-top change-img" alt="...">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Black Kaltu Bag</h5>
                             <h5>$350</h5>
@@ -235,7 +247,7 @@
                         </div>
                         <div class="ms-3">
 
-                            <button class="panda-btn-buy-now">Buy Now</button>
+                            <button class="panda-btn-buy-now clickToRemove">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -247,9 +259,9 @@
             <div>
                 <h1>LET'S STAY IN TOUCH</h1>
                 <p>Get updates on sales, specials and more</p>
-                <input class="form-control" type="email" placeholder="Your Email" name="" id="">
+                <input class="form-control" type="email" placeholder="Your Email" name="" id="submit-box">
                 <br>
-                <button class="panda-btn-buy-now">Submit</button>
+                <button class="panda-btn-buy-now" id="submitBtn" disabled>Submit</button>
             </div>
         </section>
     </main>
@@ -261,6 +273,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- js for dom -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
