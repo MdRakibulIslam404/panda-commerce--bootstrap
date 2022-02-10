@@ -66,7 +66,7 @@ for (const image of images) {
     })
 };
 
-// 8. double click to color change
+// 8. double click to color / background change
 document.getElementById("subscribe").addEventListener("dblclick", function (event) {
     event.target.style.backgroundColor = "skyblue";
 });
